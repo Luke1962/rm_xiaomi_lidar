@@ -1,0 +1,11 @@
+<launch>
+
+  <node type="xiaomi_lidar_node" pkg="xiaomi_lidar" name="lidar" output="screen">
+    <param name="frame_id" value="scan_link"/>
+	<param name="port" value="/dev/ttyUSB0"/>
+	<param name="print_rpm" value="true"/>
+	<param name="max_distance" value="4"/>
+
+  </node>
+
+</launch>
